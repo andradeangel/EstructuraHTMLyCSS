@@ -1,0 +1,86 @@
+h1{                                     /* PARA ESTILOS NORMALES */
+    color: steelblue;
+}
+.nombre-class-desde-html{               /* PARA ESTILOS CON CLASES */
+    color: steelblue;
+}
+#nombre-id-desde-html{                  /* PARA ESTILOS CON ID (NO ACATA LA CASCADA SE QUEDA CON EL ESTILO DEFINIDO Y NO PUEDE SER SOBREESCRITO) */
+    color: steelblue;
+}
+
+
+
+h1, p, .nombre-class-desde-html, #un-id{    /* PARA AGRUPADOS POR COMAS */
+    color: steelblue;
+}
+p.parrafo#holi2{                            /* PARA AGRUPADOS COMBINADOS (SIN ESPACIOS) */
+    color: steelblue;
+}
+body section div p{                         /* PARA AGRUPADOS POR DESCENDENCIA COMO PADRES, HIJOS, ETC (CON ESPACIOS) */
+    color: steelblue;
+}
+[required]{                                 /* PARA AGRUPAR POR ATRIBUTOS */
+    color: steelblue;
+}
+[type="text"]{
+    color: steelblue;
+}
+a[href^="http://"]{                         /* PARA AGRUPAR POR ATRIBUTOS FILTRANDO POR EL COMIENZO DE LETRAS (ADVERTENCIA DE LINK INSEGURO) */
+    color: steelblue;
+}
+a[href$=".mp4"]{                            /* PARA AGRUPAR POR ATRIBUTOS FILTRADO POR EL FINAL DE LETRAS (PARA SABER SU EXTENCION) */
+    color: steelblue;
+}
+a[href*="malo"]{                            /* PARA AGRUPAR  POR ATRIBUTOS FILTRADO POR TODAS LAS LETRAS (PARA SABER SI HAY UNA PALABRA) */
+    color: steelblue;
+}
+*{                                          /* PARA AGRUPAR TODO (*) */
+    color: steelblue;
+}
+div > p{                                    /* PARA AGRUPAR HIJO/S DIRECTO/S (>) */
+    color: steelblue;
+}
+p + h1{                                     /* PARA AGRUPAR POR HERMANOS (+) (AQUEL H1 QUE ESTE DESPUES DE UN P)(singular) */
+    color: steelblue;
+}
+p ~ h1{                                     /* PARA AGRUPAR POR HERMANOS (~) (AQUELLOS H1 QUE ESTEN DESPUES DE UN P)(plural) */
+    color: steelblue;
+}
+p{                                          /* PARA IMPORTANTE QUE LE GANA A TODO Y SOBRE ESCRIBE TODO */
+    color: steelblue; 
+}
+
+/* --------------------PARA ESPECIFICIDAD Y ECUACION DE CSS--------------------------- */
+/* PARA ETIQUETAS                           1
+   PARA CLASES, ATRIBUTOS Y PSEUDOCLASES    10
+   PARA IDs                                 100
+   PARA ESTILOS EN LINEA                    1000
+   PARA IMPORTANTE (LE GANA A TODOS)        !important 
+   PARA EL NAVEGADOR LOS ESTILOS SIEMPRE SE VA AL MAS ESPECIFICO O SEA EL QUE SUME MAS PUNTOS */
+
+
+a{                                          
+    color: indianred;                    /* PARA HACER QUE HEREDE ALGUNOS ESTILOS A LA FUERZA DIRECTO DE UN PADRE */
+}
+a{                                          
+    color: initial;                        /* PARA HACER QUE DEJE DE HEREDAR */
+}
+
+/* -------------------------PARA CREAR VARIABLES DONDE SE GUARDARAN ESTILOS------------------ */
+/* SE PONE ROOT PORQUE ES IGUAL A ETIQUETA HTML POR LO TANTO SERA VALIDO LA VARIABLE QUE SE DEFINA
+   PARA TODOS SUS DESCENDIENTES DEL HTML O ROOT, SE PUEDE PONER OTRAS ETIQUETAS PERO NO PORQUE TIENE ESPECIFICIDAD DE 1 SOLAMENTE */
+html{
+    --nombre-variable: green;             /* PARA DEFINIR UNA VARIABLE */
+}
+:root{
+    --nombre-variable: green;             /* PARA DEFINIR UNA VARIABLE */
+}
+h1{
+    color: var(--nombre-variable);          /* PARA LLAMAR A VARIABLE */
+}
+:root{
+    --tamaño: 20px;                         /* PARA HACER CALCULOS Y GUARDARLO EN UNA VARIABLE */
+}
+h1{
+    font-size: calc(var(--tamaño)/2);       /* PARA HACER CALCULOS CON VARIABLE */
+}

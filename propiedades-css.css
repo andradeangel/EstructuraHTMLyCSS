@@ -1,0 +1,235 @@
+div{
+    display: block;               /* PARA VOLVER BLOQUE A UN ELEMENTO DE LINEA Y PARA MOSTRAR UN ELEMENTO */
+    display: inline;              /* PARA VOLVER LINEA A UN ELEMENTO DE BLOCKE */
+    display: inline-block;        /* PARA VOLVER LINEAL Y CON BLOQUES PARA PODER DIMENSIONAR */
+    display: none;                /* PARA OCULTAR ESOS ELEMENTOS (NO RESERVA EL CAMPO QUE DEBERIA OCUPAR ESO ES EL VISIBILITY)*/
+    display: flex;                /* PARA VOLVER A BLOQUE O LINEAL A TODOS SUS HIJOS */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    width: 400px;                 /* PARA ANCHO DE CONTENIDO */
+    max-width: 500px;             /* PARA LIMITAR EL CRECIMIENTO EN ANCHO ENESTE CASO HASTA 500PX Y HACE RESPONSIVE ESA CAJA */
+    min-width: 320px;             /* PARA LIMITAR QUE SE ACHIQUE EN ANCHO EN ESTE CASO HASTA 320PX */
+    height: 400px;                /* PARA ALTO DE CONTENIDO */
+    max-height: 500px;            /* PARA LIMITAR EL CRECIMIENTO EN ALTO EN ESTE CASO HASTA 500PX */
+    min-height: 500px;            /* PARA LIMITAR QUE SE ACHIQUE EN ALTO EN ESTE CASO HASTA 500PX */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    font-size: 2rem;              /* PARA TAMAÑO DE FUENTE */
+    font-style: italic;           /* PARA ESTILO DE FUENTE (ITALIC, NORMAL, OBLIQUE, INHERIT, INITIAL, SMALL, LARGE) */
+    font-weight: 300;             /* PARA AUMENTAR EL GROSOR */
+    font-family: 'Times New Roman', 'Times, serif'; /* PARA PONER TIPO DE FUENTE MAS SU RESPALDO */
+    font-variant: small-caps;     /* PARA AUMENTAR EL TAMAÑO DE LAS PRIMERAS LETRAS DE CADA PALABRA*/
+    text-align: justify;          /* PARA ALINEAR TEXTO CENTRADO (LEFT, CENTER, END, RIGHT, STAR) */
+    text-decoration: none;        /* PARA QUITAR O PARA SUBRRAYADOS O TACHADOS CON TIPOS DE LINEA (UNDERLINE, OVERLINE) */ 
+    text-transform: uppercase;    /* PARA TRANSFORMAR TEXTO A MINUSCULAS O MAYUSCULAS Y OTROS */
+    text-transform: lowercase;    /* PARA TRANSFORMAR TEXTO A MAYUSCULAS Y OTROS */
+    text-shadow: 1px 1px 2px hsl(200, 20%, 60%); /* PARA PONER SOMBRA O RELIEVE AL TEXTO /X/Y/BLUR/COLOR/ */
+    text-indent: 30px;            /* PARA PONER SANGRIA EN CADA INICIO DE PARRAFO */
+    line-height: 1.5;             /* PARA SEPARAR LINEAS O JUNTAR MAS () */
+    letter-spacing: 1em;          /* PARA SEPARAR LETRAS DE PALABRAS */
+    word-spacing: 1em;            /* PARA SEPARAR PALABRAS */
+    direction: rtl;               /* PARA ACOMODAR EL TEXTO DE DERECHA A IZQUIERDA (O LTR PARA IZQUIERDA A DERECHA) */
+    list-style:none;              /* PARA QUITAR EL ESTILO DE LISTA */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    font-size: 16px;              /* PARA MEDIR EN PIXEL DE PANTALLA */
+    font-size: 100%;              /* PARA MEDIR EN PORCENTAJE CALCULADO DEL NAVEGADOR 16PX POR DEFECTO */
+    font-size: 1rem;              /* PARA MEDIR EN REM CALCULADO DEL NAVEGADOR 16PX POR DEFECTO (RECOMENDADO PARA LETRA) */
+    font-size: 1em;               /* PARA MEDIR EN EM CALCULADO DEL CONTEXTO O HEREDADO DEL PADRE (RECOMENDADO PARA CAJAS) */
+    font-size: 2vh;               /* PARA MEDIR EN VIEW HEIGHT HACE RESPONSIVE EN EL ANCHO SEGUN LA VISTA */
+    font-size: 2vw;               /* PARA MEDIR EN VIEW WIDTH HACE RESPONSIVE EN EL ALTO SEGUN LA VISTA */
+    margin: auto;                 /* PARA CENTRAR AUTOMATICAMENTE DEPENDIENDO DE LA PROPIEDAD */
+    margin: inherit;              /* PARA HEREDAR EL VALOR DE SU PARE (SOLO SIRVE SI LAS PROPIEDADES SON LAS MISMAS) */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    color: currentColor;           /* PARA QUE EL COLOR SE ADAPTE A SU PADRE */
+    color: transparent;            /* PARA PONER COLOR TRANSPARENTE */
+    color: rgb(255, 158, 100);   /* PARA PONER COLOR EN RGB / RED 0-255/ GREEN 0-255/ BLUE 0-255 */
+    color: rgba(255, 165, 145, .5);   /* PARA PONER COLOR EN RGB MAS TRANSPARENCIA / RED 0-255/ GREEN 0-255/ BLUE 0-255 / ALPHA 0-1 */
+    color: #ff0000;              /* PARA PONER COLOR EN HEXADECIMAL 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F /RED ##/GREEN ##/BLUE ##/ */
+    color: #ff000040;            /* PARA PONER COLOR EN HEXADECIMAL MAS TRANSPARENCIA /RED ##/GREEN ##/BLUE ##/ALPHA ##/ */
+    color: hsl(0, 100%, 50%);    /* PARA PONER COLOR MODO HSL /HUE 1-360/SATURATION 1-100%/ LIGHTNESS 1-100% */
+    color: hsl(0, 100%, 50%, 0.5);/* PARA PONER COLOR MODO HSL CON TRANSPARENCIA /HUE 1-360/SATURATION 1-100%/LIGHTNESS 1-100%/ALPHA 0-1 */ 
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    margin: 200px;                /* PARA MARGEN DE LOS 4 LADOS */
+    margin-top: 20px;             /* PARA MARGEN SUPERIOR */
+    margin-right: 30px;           /* PARA MARGEN DERECHO */
+    margin-bottom: 10px;          /* PARA MARGEN INFERIOR */
+    margin-left: 15px;            /* PARA MARGEN IZQUIERDO */
+    margin: 20px 30px 10px 50px;  /* PARA MARGEN DE LOS 4 EN SENTIDO DEL RELOJ */
+    margin: 20px 30px 10px;       /* PARA MARGEN DE LOS 4 EN SENTITO DEL RELOJ, EL QUE FALTA LO TOMA DEL LADO OPUESTO */
+    margin-left: auto;            /* PARA CENTRAR Y QUE TOME UN VALOR AUTOMATICO A LA IZQUIERDA */
+    margin-right: auto;           /* PARA CENTRAR Y QUE TOME UN VALOR AUTOMATICO A LA DERECHA */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    padding: 200px;                /* PARA ESPACIO DENTRO DE CAJA DE LOS 4 LADOS */
+    padding-top: 20px;             /* PARA ESPACIO DENTRO DE CAJA SUPERIOR */
+    padding-right: 30px;           /* PARA ESPACIO DENTRO DE CAJA DERECHO */
+    padding-bottom: 10px;          /* PARA ESPACIO DENTRO DE CAJA INFERIOR */
+    padding-left: 15px;            /* PARA ESPACIO DENTRO DE CAJA IZQUIERDO */
+    padding: 20px 30px 10px 50px;  /* PARA ESPACIO DENTRO DE CAJA DE LOS 4 EN SENTIDO DEL RELOJ */
+    padding: 20px 30px 10px;       /* PARA ESPACIO DENTRO DE CAJA DE LOS 4 EN SENTITO DEL RELOJ, EL QUE FALTA LO TOMA DEL LADO OPUESTO */
+    padding-right: auto;           /* PARA CENTRAR Y QUE TOME UN VALOR AUTOMATICO A LA DERECHA */
+    padding-left: auto;            /* PARA CENTRAR Y QUE TOME UN VALOR AUTOMATICO A LA IZQUIERDA */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    position: absolute;            /* PARA CAMBIAR DE POSICION A ABSOLUTE PIERDE SU LUGAR Y SE PONE DE TRAS DE TODO */
+    position: relative;            /* PARA CAMBIAR DE POSICION A RELATIVE NO PIERDE SU LUGAR Y SE LO PUEDE MOVER A CUALQUIER DIRECCION */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    border: 1px solid red;             /* PARA BORDE A LOS 4 LADOS MAS SU ESTILO MAS SU COLOR*/      
+    border-width: 2px;                   /* PARA TAMAÑO DE BORDE A LOS 4 LADOS (THIN, MEDIUM, THICK) */
+    border-style: solid;                 /* PARA ESTILO DE BORDE A LOS 4 LADOS (NORMAL)*/
+    border-style: dashed dotted double;  /* PARA ESTILO DE BORDE A LOS 4 LADOS EN SENTIDO DEL RELOJ (GROOVE, RIDGE, INSET, OUTSET, HIDDEN)*/
+    border-color: black;               /* PARA COLOR DE BORDE A LOS 4 LADOS */
+    border-top-width: 5px;               /* PARA BORDE ARRIBA */                      /* TOP, RIGHT, BOTTOM, LEFT */
+    border-top-style: groove;            /* PARA ESTILO DE BORDE DE ARRIBA */         /* TOP, RIGHT, BOTTOM, LEFT */  
+    border-top-color: yellow;          /* PARA COLOR DE BORDE DE ARRIBA */          /* TOP, RIGHT, BOTTOM, LEFT */
+    border-top: 20px ridge blue;       /* PARA ESTILOS DE BORDE DE SOLO ARRIBA */   /* TOP, RIGHT, BOTTOM, LEFT */
+    border-radius: 50px 20px 10px .5px;  /* PARA BORDE RADIO DE CONTENIDO A LOS 4 LADOS EN SENTIDO DEL RELOJ*/
+    border-radius: 10px 20px 30px 40px / 10px 20px 30px 40px;                           /* X X X X / Y Y Y Y */
+    border-top-left-radius: 23px .2px;   /* PARA BORDE RADIO SUPERIOR IZQUIERDO */      /* SE PUEDE POR EJES X, Y */
+    border-top-right-radius: 20px;       /* PARA BORDE RADIO SUPERIOR DERECHO */        /* SE PUEDE POR EJES X, Y */
+    border-bottom-left-radius: 50px;     /* PARA BORDE DE RADIO INFERIOR IZQUIERDO */   /* SE PUEDE POR EJES X, Y */
+    border-bottom-right-radius: 40px;    /* PARA BORDE DE RADIO INFERIOR DERECHO */     /* SE PUEDE POR EJES X, Y */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    box-sizing: border-box;              /* PARA QUE NO SE SUME PADDING Y BORDER */
+    box-shadow: 50px 30px;               /* PARA CREAR COPIA DE CAJA (EJE X H-OFFSET, Y V-OFFSET, SE PUEDEN COPIAR HASTA FORMAR UN TABLERO)*/
+    box-shadow: 5px 8px blue 2px 6px;  /* PARA SOMBRA DE CAJA MAS COLOR, DIFUMINADO BLUR, TAMAÑO DE COPIA SPREAD, */ 
+    box-shadow: 2px 2px 2px 0 inset;     /* PARA SOMBRA INTERNA PARA CIRCULOS POR EJEMPLO ES OPCIONAL*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    background-color: yellow;          /* PARA COLOR DE FONDO */
+    background-image: linear-gradient(yellow, red);            /* PARA DEGRADADO LINEAL (HEIGHT AUTO Y MIN-HEIGHT 100 PA Q NO SE REPITA)*/
+    background-image: linear-gradient(yellow 30px, red 10px);  /* PARA DEGRADADO LINEAL EMPEZANDO DESDE UNA PARTE */
+    background-image: linear-gradient(90deg yellow, red);      /* PARA DEGRADADO LINEAL EMPEZANDO DESDE UN ANGULO */
+    background-image: linear-gradient(to top left yellow, red);/* PARA DEGRADADO LINEAL EMPEZANDO DESDE UN SENTIDO */
+    background-image: radial-gradient(yellow, red);            /* PARA DEGRADADO RADIAL APLICA DE IGUAL MANERA LAS DEMAS PROPIEDADES */
+    background-image: radial-gradient(at 50px 30px green, red);/* PARA DEGRADADO RADIAL PONIENDO EL CENTRO EN DONDE SEA */
+    background-image: radial-gradient(circle at 50px green, red);/* PARA DEGRADADO RADIAL PONIENDO DE FORMA CIRCULAR CON O SIN VALOR */
+    background-image: radial-gradient(ellipse at 50px green, red);/* PARA DEGRADADO RADIAL PONIENDO DE FORMA DE ELIPSE CON O SIN VALOR */
+    background-image: radial-gradient(closest-side at 50% 50% green, red);/* PARA DEGRADADO RADIAL PONIENDO DESDE LADO MAS CERCANO */
+    background-image: radial-gradient(farthest-side at 50% 50% green, red);/* PARA DEGRADADO RADIAL PONIENDO DESDE LADO MAS LEJANO */
+    background-image: radial-gradient(closest-corner at 50% 50% green, red);/* PARA DEGRADADO RADIAL PONIENDO DESDE ESQUINA MAS CERCANO */
+    background-image: radial-gradient(farthest-corner at 50% 50% green, red);/* PARA DEGRADADO RADIAL PONIENDO DESDE ESQUINA MAS LEJANO */
+    background-image: repeating-radial-gradient(yellow 10%, red 15%); /* PARA DEGRADADO RADIAL REPETIDO CON PARAMETROS O SIN */
+    background-image: repeating-linear-gradient(yellow 10%, red 15%); /* PARA DEGRADADO LINEAL REPETIDO CON PARAMETROS O SIN */
+    background-image: url(imagen.jpg);   /* PARA PONER IMAGEN DE FONDO */
+    background-image: url(imagen.jpg), url(imagen.jpg);  /* PARA PONER VARIAS IMAGENES DE FONDO A LA VEZ IMAGEN */
+    background-repeat: repeat;           /* PARA QUE SE REPITA LA IMAGEN DE FONDO*/
+    background-repeat: no-repeat;        /* PARA QUE NO SE REPITA LA IMAGEN DE FONDO*/
+    background-repeat: repeat-x;         /* PARA QUE SE REPITA LA IMAGEN DE FONDO EN EJE X */
+    background-repeat: repeat-y;         /* PARA QUE SE REPITA LA IMAGEN DE FONDO EN EJE X */
+    background-size: auto;               /* PARA PONER IMAGEN DE FONDO CON TAMAÑO ORIGINAL */ 
+    background-size: 700px 300px;        /* PARA PONER IMAGEN CON TAMAÑO PERSONALIZADO */
+    background-size: 700px;              /* PARA PONER IMAGEN CON TAMAÑO PERSONALIZADO SOLO EN EL ANCHO Y EL ALTO ES AUTOMATICO*/ 
+    background-size: contain;            /* PARA PONER IMAGEN DE FONDO A UN CONTENIDO HTML NO SE RECORTA*/
+    background-size: cover;              /* PARA PONER IMAGEN DE FONDO A UN CONTENIDO HTML RELLENA TODO EL CONTENIDO SE RECORTA*/
+    background-position: 200px 100px;    /* PARA POSICIONAR IMAGEN DE FONDO EN EJE X Y EJE Y */
+    background-position: center center;  /* PARA POSICIONAR IMAGEN EN EL CENTRO */
+    background-position: right 20px bottom 20px;  /* PARA POSICIONAR IMAGEN CON SENTIDOS EN EJE X Y EJE Y */
+    background-clip: content-box;        /* PARA PONER IMAGEN DE FONDO A CONTENIDO DE UNA CAJA (PROPIEDAD) */
+    background-clip: padding-box;        /* PARA PONER IMAGEN DE FONDO MAS SU PADDING A CONTENIDO DE UNA CAJA (PROPIEDAD) */
+    background-clip: border-box;         /* PARA PONER IMAGEN DE FONDO MAS SU BORDER A CONTENIDO DE UNA CAJA (PROPIEDAD) */
+    background-origin: content-box;      /* PARA PONER IMAGEN DE FONDO QUE COMIENCE DESDE EL INICIO DEL CONTENIDO Y NO SE RECORTE */
+    background-attachment: fixed;        /* PARA QUE LA IMAGEN SE QUEDE ESTATICA HACIENDO SCROL */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    flex-direction: column;        /* PARA ORDENAR LAS CAJAS EN VERTICAL ORDENADO */
+    flex-direction: column-reverse;/* PARA ORDENAR LAS CAJAS EN VERTICAL REVERTIDO */
+    flex-direction: row-reverse;   /* PARA ORDENAR LAS CAJAS EN HORIZONTAL REVERTIDO (ROW POR DEFAULT) */
+    flex-wrap: wrap;               /* PARA QUE SE ORDENE LAS CAJAS HACER RESPONSIVE LAS CAJAS (NOWRAP POR DEFAULT) */
+    flex-flow: row wrap;           /* PARA DIRECCION DE CAJAS Y QUE SE ORDENE (SINTAXIS DE DIRECTION Y WRAP JUNTOS) */
+    flex-grow: 5;                  /* PARA DAR MAS TAMAÑO O MENOS TAMAÑO A UNA CAJA EN EL VIEWPORT (HORIZONTAL)*/
+    justify-content: flex-start;   /* PARA ORDENAR LAS CAJAS DESDE EL INICIO (POR DEFAULT) */
+    justify-content: center;       /* PARA ORDENAR LAS CAJAS AL CENTRO */
+    justify-content: flex-end;     /* PARA ORDENAR LAS CAJAS DESDE FINAL */
+    justify-content: space-between;/* PARA DISTRIBUIR LAS CAJAS DE FORMA COMPLETA A LA CAJA PADRE JUSTIFY */
+    justify-content: space-around; /* PARA DISTRIBUIR LAS CAJAS CON ESPACIOS */
+    justify-content: space-evenly; /* PARA DISTRIBUIR LAS CAJAS CON ESPACIOS IGUALES PARA CADA CAJA */
+    align-items: flex-start;       /* PARA QUE LAS CAJAS NO LLEGUEN HASTA EL FINAL EN VERTICAL */
+    align-items: stretch;          /* PARA QUE LAS CAJAS LLEGUEN HASTA EL FINAL EN VERTICAL */
+    align-items: center;           /* PARA QUE LAS CAJAS SE CENTREN EN VERTICAL EJE Y */
+    align-items: baseline;         /* PARA ALINEAR LAS CAJAS SOBRE UNA LINEA IMAGINARIA (BASE DE LINEA) */
+    align-content: flex-start;     /* PARA ORDENAR LAS CAJAS DESDE EL INICIO (POR DEFAULT) (EN VERTICAL) */
+    align-content: center;         /* PARA ORDENAR LAS CAJAS AL CENTRO (EN VERTICAL) */
+    align-content: flex-end;       /* PARA ORDENAR LAS CAJAS DESDE FINAL (EN VERTICAL) */
+    align-content: space-between;  /* PARA DISTRIBUIR LAS CAJAS DE FORMA COMPLETA A LA CAJA PADRE JUSTIFY (EN VERTICAL) */
+    align-content: space-around;   /* PARA DISTRIBUIR LAS CAJAS CON ESPACIOS (EN VERTICAL) */
+    align-content: space-evenly;   /* PARA DISTRIBUIR LAS CAJAS CON ESPACIOS IGUALES PARA CADA CAJA (EN VERTICAL) */
+    order: 2;                      /* PARA ORDEN DE CAJAS COMO SE MOSTRARA PERSONALIZADOS CON NUMEROS */
+    outline: 5px;                  /* PARA MARGEN FUERA DE LA CAJA (SE SOBRE EXPONE, NO EMPUJA OTROS ELEMENTOS) */  
+    float: none;                   /* PARA POSICIONAR CAJAS EN ORDEN (LEFT, RIGHT)DESDE LA IZQUIERADA O DERECHA */   
+    visibility: hidden;            /* PARA OCULTAR ESOS ELEMENTOS (RESERVA EL CAMPO QUE DEBERIA OCUPAR) */
+    opacity: .5;                   /* PARA TRANSPARENCIA DE ALGO NORMALMENTE USADO PARA IMAGENES (0 - 1) */
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+    :hover{                            /* PARA CUANDO EL CURSOR ESTA ENCIMA (EN TODO EL BODY) PSEUDOCLASES */
+        background-color: yellow;    
+    }
+    .box:hover{                        /* PARA CUANDO EL CURSOR ESTA EN CIMA CAMBIE TAMAÑO Y COLOR */
+        background-color: aqua;      
+    }
+    a:visited{                         /* PARA LINK VISITADO */
+        color: blueviolet;
+    }
+    a:active{                          /* PARA LINK AL HACERLE CLICK */
+        color: blueviolet;         
+    }
+    p::selection{                      /* PARA CUANDO SE SELECCIONE UN TEXTO CAMBIE ESTILOS */
+        color: blueviolet;
+    }
+    p::after{                          /* PARA PONER ALGO AL FINAL DE UN TEXTO */
+        content: " |--";
+    }
+    .secreto:target{                   /* PARA CUANDO SE HAGA CLICK HAGA ALGO EN ESTE CASO MOSTRAR UN CONTENIDO OCULTO*/
+        display: block;
+    }
+    p:not(.p2){                        /* PARA CONDICIONAR UN ELEMENTO EN ESTE CASO TODOS LOS Ps MENOS EL .P2*/
+        color: blueviolet;
+    }
+    p:not(:last-child){                /* PARA CONDICIONAR EL ULTIMO ELEMENTO EN ESTE CASO TODOS CON MARGIN POR DEFECTO MENOS EL ULTIMO */
+        margin-bottom: 1px;
+    }
+    div:empty{                         /* PARA IDENTIFICAR A LOS ELEMENTOS VACIOS Y HACERLES ALGO EN ESTE CASO DIV Q NO TENGA NADA */
+        padding: 0;
+    }
+    ul :first-child{                   /* PARA SELECICONAR EL PRIMER ELEMENTO HIJO*/
+        background-color: yellow;
+    }
+    ul :last-child{                    /* PARA SELECCIONAR EL ULTIMO ELEMENTO HIJO*/
+        background-color: yellow;
+    }
+    P:first-of-type{                   /* PARA SELECCIONAR EL PRIMER TIPO DE ELEMENTO (NO FUNCIONA CON CLASES)*/ 
+        background-color: yellow;    
+    }
+    p:last-of-type{                    /* PARA SELECCIONAR EL ULTIMO TIPO DE ELEMENTO (NO FUNCIONA CON CLASES)*/
+        background-color: yellow;    
+    }
+    p:nth-child(even){                 /* PARA CONTAR DESDE EL INICIO EN ESTE CASO LOS PARES (even) DE CUALQUIER LISTA */
+         background: yellow;
+    }
+    p:nth-last-child(even){            /* PARA CONTAR DESDE EL FINAL EN ESTE CASO LOS PARES (even) DE CUALQUIER LISTA */
+        background: yellow;
+    }
+    p:nth-child(odd){                  /* PARA CONTAR DESDE EL INICIO EN ESTE CASO LOS IMPARES (odd) DE CUALQUIER LISTA */
+        background: yellow;
+    }
+    p:nth-last-child(odd){             /* PARA CONTAR DESDE EL FINAL EN ESTE CASO LOS IMPARES (odd) DE CUALQUIER LISTA */
+       background: yellow;
+    }
+    p:nth-child(3n){                   /* PARA CONTAR DESDE EL INICIO DE N X N EN ESTE CASO DE 3 EN 3 DE CUALQUIER LISTA */
+        background: yellow;
+    }
+    p:nth-last-child(3n+1){            /* PARA CONTAR DESDE EL FINAL DE N X N EN ESTE CASO DE 3 EN 3 DE (PONEMOS HACER OPERACIONES ADICIONALES)*/
+        background: yellow;
+    }
+    p:nth-child(5){                    /* PARA CONTAR DESDE EL INICIO EN ESTE CASO LA POSICION 5 DE CUALQUIER LISTA */
+        background: yellow;
+    }
+    p:nth-last-child(6){               /* PARA CONTAR DESDE EL FINAL EN ESTE CASO LA POSICION 6 DE CUALQUIER LISTA */
+        background: yellow;
+    }
+    p:nth-child(-n+5){                 /* PARA SELECCIONAR LOS PRIMEROS X ELEMENTOS*/
+        background: yellow;
+    }
+    p:nth-last-child(-n+5){            /* PARA SELECCIONAR LOS ULTIMOS X ELEMENTOS*/
+        background: yellow;
+    }
+    p:nth-child(n+5){                  /* PARA SELECCIONAR LOS PRIMEROS X ELEMENTOS A PARTIR DE UN NUMERO X */
+        background: yellow;
+    }
+    p:nth-last-child(n+5){             /* PARA SELECCIONAR LOS ULTIMOS X ELEMENTOS A PARTIR DE UN NUMERO X */
+        background: yellow;
+    }
